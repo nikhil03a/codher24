@@ -1,25 +1,29 @@
 .navigation {
-    width: 100%;
-    position:fixed;
-    top: 0;
-    z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
-
+span{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 nav {
-    margin: 1.2rem;
-    padding: 0.7rem 1.7rem;
-    height: 3.5rem;
-    background: linear-gradient(
+  margin: 1.2rem;
+  padding: 0.7rem 1.7rem;
+  height: 3.5rem;
+  /* background: linear-gradient(
       to bottom right,
       rgba(255, 255, 255, 0.4),
       rgba(233, 233, 233, 0.1)
-    );
-    backdrop-filter: blur(20px);
-    border-radius: 10px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
+    ); */
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navlinks {
@@ -42,18 +46,29 @@ nav {
 }
 
 .link {
-  color: white;
-  height:90%;
-  text-transform: uppercase;
-  text-decoration: none;
+  background-image: linear-gradient(90deg, rgba(245,228,110,1) 0%, rgba(240,173,110,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 90%;
+  /* text-transform: uppercase; */
+  /* text-decoration: none; */
   margin: 3px 10px;
-  font-size: medium;
-  font-weight: 1000;
+  /* font-size: medium;
+  font-weight: 1000; */
+  
+}
+.link:hover{
+  background-image: linear-gradient(90deg, rgba(244,248,96,1) 0%, rgba(248,196,146,1) 100%);
+  
 }
 
 .navlinks .link:hover {
   transform: translateY(10);
-  color:#240c3c;
+  color: #240c3c;
 }
 
 .navkinks a:after {
@@ -64,9 +79,12 @@ nav {
   left: 0;
   bottom: 15px;
   background: #240c3c;
-  transition: width .5s linear;  
+  transition: width .5s linear;
 }
-.navkinks a:hover:after {width: 100%;}
+
+.navkinks a:hover:after {
+  width: 100%;
+}
 
 
 
@@ -85,6 +103,7 @@ nav {
   left: 0;
   width: 100%;
 }
+
 .closed {
   display: hidden;
 }
@@ -94,7 +113,7 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background-image: linear-gradient(90deg, blueviolet, rgb(195, 131, 255));
   border-radius: 15px;
   transition: all ease-in-out 1s;
@@ -112,23 +131,26 @@ nav {
 
 
 @media screen and (max-width: 768px) {
-  .logo{
+  .logo {
     position: relative;
     right: 5%;
   }
+
   .logo .logo_link img {
     height: 40px;
   }
+
   .nav {
     margin: 0.5rem;
     padding: 0.5rem 1.2rem;
     height: 3rem;
   }
+
   .navlinks {
     display: none;
   }
-  .hamburger-menu{
+
+  .hamburger-menu {
     display: flex;
   }
 }
-  
