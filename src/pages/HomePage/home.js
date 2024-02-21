@@ -38,7 +38,7 @@ function Home() {
 						<br></br><br></br>Join us to hack and slay, one line of code at a time.
 					</div>
 					<div className="date">
-						<span>April 7 & 8</span>
+						{/* <span>April 7 & 8</span> */}
 					</div>
 					<div>
 						<span>
