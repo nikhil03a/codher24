@@ -3,6 +3,7 @@ import './App.css';
 import Loader from './Loader';
 import NavBar from './pages/Navbar/navbar';
 import Home from './pages/HomePage/home';
+import About from './pages/HomePage/about';
 import Codher from './pages/CodherPage/codher';
 import Events from './pages/EventsPage/events';
 import Footer from './pages/Footer/footer';
@@ -28,6 +29,7 @@ function App() {
 				<div className="App">
 					<NavBar />
 					<Home />
+					<About />
 					<Codher />
 					<Events />
 					<Sponsors />

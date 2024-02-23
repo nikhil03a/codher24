@@ -1,9 +1,9 @@
 export const tracks = [
-    {
-        id : "t1",
-        title : "Women Safety",
-        content : "In recent years, there has been a growing concern about women's safety, and various technological advancements have been made to address this issue.These advancements range from personal safety devices, such as panic buttons and GPS-enabled trackers, to smart surveillance systems and mobile apps that help women access emergency services quickly. These technologies have the potential to empower women and provide them with a sense of security, especially in public spaces where they may feel vulnerable."
-    },
+    // {
+    //     id : "t1",
+    //     title : "Women Safety",
+    //     content : "In recent years, there has been a growing concern about women's safety, and various technological advancements have been made to address this issue.These advancements range from personal safety devices, such as panic buttons and GPS-enabled trackers, to smart surveillance systems and mobile apps that help women access emergency services quickly. These technologies have the potential to empower women and provide them with a sense of security, especially in public spaces where they may feel vulnerable."
+    // },
     {
         id : "t2",
         title : "Supply Chain",
