@@ -17,6 +17,16 @@ function Timer() {
 	useEffect(() => {
 		changeView();
 	}, []);
+
+	useEffect(() => {
+		const script = document.createElement("script");
+	
+		script.src = "https://cdn.logwork.com/widget/countdown.js";
+		document.body.appendChild(script);
+		return () => {
+		  document.body.removeChild(script);
+		}
+	  }, []);
 	
 	window.addEventListener("resize", changeView);
   
