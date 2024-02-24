@@ -1,0 +1,29 @@
+.event_container{
+    padding:2rem;
+    background-color: var(--secondary);
+    color:var(--text);
+    clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+    margin-top: -40px;
+}
+.responsive_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.event_card{
+    padding:1rem;
+    margin-inline:1rem;
+background: rgba(0, 0, 0, 0.33);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.event_card img{
+    height:200px;
+    display: block;
+    margin-inline:auto;
+}

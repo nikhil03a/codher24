@@ -8,17 +8,12 @@ function Footer() {
 				<div className="container">
 					<div className="row">
 						<div className="footer-col">
-						<h4>Contact</h4>
-							<ul>
-								<li className="contactList">Bharath Kumar DP : 9952049834</li>
-								<li className="contactList">Asmitha Eswaran : 7338850301</li>
-								</ul>
 						</div>
 						<div className="footer-col">
 							<h4>Contact</h4>
 							<ul>
-								<li className="contactList">Pranava Raman BMS : 9443501317</li>
-								<li className="contactList">Akshayalakshmi VK : 9360722652</li>
+							<li className="contactList">Arunachalam M : +91 95515 40001</li>
+								<li className="contactList">Rishitha : +91 90435 02502</li>
 								<li className="contactList">
 									Email:
 									<a

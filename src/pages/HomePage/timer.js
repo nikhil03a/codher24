@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import "../CodherPage/codher.css";
 
 function Timer() {
   const [width, setWidth] = useState(window.innerWidth);

@@ -1,11 +1,27 @@
 .sponsors_container {
-  padding-top: 6rem;
+  padding-block: 6rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  color:var(--text);
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
 }
 
+.sponsor_card{
+  width:50%;
+  margin-inline:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom:2rem;
+}
+
+.sponsor_card h3{
+  font-size:2rem;
+ 
+}
 .Sponsorstitle span {
     background: 50% 100% / 50% 50% no-repeat
                 radial-gradient(ellipse at bottom, #fff, transparent, transparent);

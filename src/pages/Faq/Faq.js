@@ -4,8 +4,6 @@ import "./Faq.css";
 function Faq() {
     return (
         <div className="faqcontent" id="faq">
-
-
             <div className="card-wrapper  | content-cc">
                 <div className="faq-card">
 
@@ -13,10 +11,11 @@ function Faq() {
 
                     
                         <img className="mobile pattern" 
-                            src="https://raw.githubusercontent.com/Romerof/FAQ-accordion-card/main/images/bg-pattern-mobile.svg">
+                            src="https://raw.githubusercontent.com/Romerof/FAQ-accordion-card/main/images/bg-pattern-mobile.svg" alt="faq">
+
                         </img>
                         <img className="mobile ilust" 
-                            src="https://raw.githubusercontent.com/Romerof/FAQ-accordion-card/main/images/illustration-woman-online-mobile.svg">
+                            src="https://raw.githubusercontent.com/Romerof/FAQ-accordion-card/main/images/illustration-woman-online-mobile.svg" alt="faq">
                         </img>
 
                     </div>
@@ -35,7 +34,7 @@ function Faq() {
                                         Is CODHER only for women?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                 </label>
                             </div>
@@ -50,9 +49,9 @@ function Faq() {
 
                                 <div className="faq-accordion-title">
                                     <label for="tgg-title-2">
-                                    <h2>What are the perks of attending CODHER'23?</h2>
+                                    <h2>What are the perks of attending CODHER'24?</h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -73,7 +72,7 @@ function Faq() {
                                     Any specific qualification to be a participant?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -97,7 +96,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What is the number of participants allowed for each team?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -118,7 +117,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Is there any registration fee to attend and how much per team?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -141,7 +140,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Will participants receive Certificates?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -161,7 +160,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Are inter-college teams allowed?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -181,7 +180,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What is the mode of the hackathon and which platform is used?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -201,7 +200,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What is the duration of the hackathon?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -221,7 +220,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Is it an Open themed hackathon and when will the problem statements be released ?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -241,7 +240,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Will there be review meets during the hackathon period?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -261,7 +260,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Who are mentors and how will they help?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -281,7 +280,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What are the track prizes?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -301,7 +300,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Can the hackathon winners also win the track prizes?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -321,7 +320,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What are Freshman and Sophomore prizes?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -341,7 +340,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     What are the Pre-events and who can participate in it?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -361,7 +360,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     How do we submit our work for the hackathon?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -381,7 +380,7 @@ We encourage beginners and freshman year students as well, you can browse throug
                                     Should all the participants definitely have a discord account?
                                     </h2>
                                     <span className="arrow-icon" style={{color:"white"}}>
-                                        <img src="assets/arrow-white.ico"/>
+                                        <img src="assets/arrow-white.ico" alt="arrow"/>
                                     </span>
                                     </label>
                                 </div>
@@ -398,8 +397,6 @@ We encourage beginners and freshman year students as well, you can browse throug
                 </div> 
 
             </div> 
-            <div className='commSponsor'><span>Want to become our community sponsor<br/>Mail us at: <a href="mailto:publicrelations@auceg.acm.org" target={"blank"} style={{ textDecoration: "none", color: "transparent" }}>publicrelations@auceg.acm.org</a></span></div>
-            <br/><br/>
         </div>
     )
 }

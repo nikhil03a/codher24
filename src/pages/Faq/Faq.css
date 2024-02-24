@@ -3,21 +3,39 @@
     font-family: var(--principal-font);
     font-size: 15px;
     color: var(--neutral-dark-color);
-  
-    background-size: cover;
   }
-  
+    html {
+      --b: 4px; /* line thickness */
+      --s: 60px; /* size */
+      
+      --c:#0000 75%,var(--accent) 0;
+      --p1:from -90deg at calc(50% + var(--b)) calc(100% - var(--b));
+      --p2:from -90deg at var(--b) calc(50% - var(--b));
+      --e:calc(var(--s)/2);
+      --e-:calc(var(--s)/-2);
+    }
+    .faqcontent{
+      background:
+        conic-gradient(var(--p1),var(--c)),
+        conic-gradient(var(--p1),var(--c)),
+        conic-gradient(var(--p2),var(--c)),
+        conic-gradient(var(--p2),var(--c)),
+        #111;
+       background-size: var(--s) var(--s);
+       animation: g8 10s infinite;
+    }
+    
+   
 
    
   
   
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root{
   --principal-font: 'Kumbh Sans', sans-serif;
   --font-size: 12px;
 
-  --bg-gradient: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  --bg-gradient: linear-gradient(to bottom, var(--secondary), var(--primary));
 
   --primary-dark-color: hsl(238, 29%, 16%);
   --primary-soft-color: hsl(14, 88%, 65%);
@@ -78,12 +96,12 @@ h2 {
     rgba(255, 255, 255, 0.4),
     rgba(233, 233, 233, 0.1)
   );
-  background-color: blueviolet;
+  background-color: var(--secondary);
   border-radius: 10px;
   border-bottom: 1px solid #ccc;
   border-radius: 20px;
 
-  max-width: 710px;
+  max-width: 80%;
   margin-top: 90px;
   
   box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
@@ -206,3 +224,25 @@ input.tgg-title {
     font-size: 1.2em;
   }
 }
+
+@keyframes g8{
+  0%,
+  2%   {background-position:0 0       ,var(--e)  var(--e),0 0        ,var(--e) var(--e) }
+  10%,
+  15%  {background-position:0 0       ,var(--e)  var(--e),0 var(--e) ,var(--e) 0        }
+  22.5%,
+  27.5%{background-position:var(--e) 0,0         var(--e),0 var(--e) ,var(--e) 0        }
+  35%,
+  40%  {background-position:var(--e) 0,0         var(--e),0 0        ,var(--e) var(--e-)}
+  47.5%,
+  52.5%{background-position:0        0,var(--e-) var(--e),0 0        ,var(--e) var(--e-)}  
+  60%,
+  65%  {background-position:0        0,var(--e-) var(--e),0 var(--e-),var(--e) 0        } 
+  72.5%,
+  77.5%{background-position:var(--e-)0,0         var(--e),0 var(--e-),var(--e) 0        } 
+  85%,
+  90%  {background-position:var(--e-)0,0         var(--e),0 0        ,var(--e) var(--e) } 
+  98%,
+  100% {background-position:0        0,var(--e)  var(--e),0 0        ,var(--e) var(--e) }
+}
+

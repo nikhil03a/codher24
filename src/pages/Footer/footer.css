@@ -16,7 +16,7 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: blueviolet;
+	background-color: var(--secondary);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     position: static;    

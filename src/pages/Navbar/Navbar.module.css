@@ -1,0 +1,166 @@
+.nav_container {
+  background-color: #040919;
+  padding: 1rem;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav_toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav_toggle:focus ~ .nav_toggle_label {
+  outline: 3px solid rgba(rgb(211, 226, 232), .75);
+}
+
+.nav_toggle_label {
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_toggle_label span,
+.nav_toggle_label span::before,
+.nav_toggle_label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav_toggle_label span::before,
+.nav_toggle_label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav_toggle_label span::before {
+  bottom: 7px;
+}
+
+.nav_toggle_label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    background-color: #040919;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+.nav_container img{
+    width: 100px;
+    height: 50px;
+}
+nav a:hover {
+  color: rgb(186, 21, 201);
+
+}
+
+.nav_toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav_toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+  .nav_toggle_label {
+    display: none;
+  }
+
+.nav_container{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    background-color: #040919;
+    padding: 0.5rem;
+  }
+  
+  .logo {
+    grid-column: 2 / 3;
+  }
+  
+  nav {
+    
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: rgb(177, 5, 174);
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
