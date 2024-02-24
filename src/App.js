@@ -5,7 +5,6 @@ import NavBar from './pages/Navbar/navbar';
 import Home from './pages/HomePage/home';
 import About from './pages/HomePage/about';
 import Codher from './pages/CodherPage/codher';
-import Events from './pages/EventsPage/events';
 import Footer from './pages/Footer/footer';
 import Sponsors from './pages/SponsorsPage/sponsors';
 import Schedule from './pages/SchedulePage/schedule';
@@ -30,9 +29,8 @@ function App() {
 					<NavBar />
 					<Home />
 					<About />
-					<Codher />
-					<Events />
 					<Sponsors />
+					<Codher />
 					<Schedule />
 					<Faq />
 					<Footer />

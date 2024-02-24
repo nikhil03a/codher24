@@ -3,14 +3,14 @@ import "./about.css";
 
 function About() {
   return (
-    <div className="about_container">
+    <div className="about_container" id="about">
       <div className="about_title">
-        <span style={{ color: "#fff" }}>About ACM</span>
+        <span style={{ color: "#fff" }}>About</span>
       </div>
       <div className="cardContainer">
         <div className="card_about">
           <div className="main">
-            <h2 style={{ color: "#fff", textDecoration: "underline" }}>
+            <h2 style={{ color: "#fff" }}>
               ACM CEG
             </h2>
             <p className="description" style={{fontSize: "1.2rem"}}>

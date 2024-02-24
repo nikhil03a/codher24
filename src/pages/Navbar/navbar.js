@@ -44,12 +44,12 @@ function NavBar() {
 								</span>
 							</a>
 							<a
-								href="#tracks"
+								href="#about"
 								className="link"
-								onClick={() => change("Tracks")}
+								onClick={() => change("About")}
 							>
-								<span className={`${active === "Events" ? "linkactive" : ""}`}>
-									Tracks
+								<span className={`${active === "About" ? "linkactive" : ""}`}>
+									About
 								</span>
 							</a>
 							<a
@@ -61,6 +61,15 @@ function NavBar() {
 									className={`${active === "Sponsors" ? "linkactive" : ""}`}
 								>
 									Sponsors
+								</span>
+							</a>
+							<a
+								href="#tracks"
+								className="link"
+								onClick={() => change("Tracks")}
+							>
+								<span className={`${active === "Events" ? "linkactive" : ""}`}>
+									Pre Events & Tracks
 								</span>
 							</a>
 							<a
@@ -108,11 +117,14 @@ function NavBar() {
 									<a href="#home" onClick={closeMobileMenu}>
 										<span>Home</span>
 									</a>
-									<a href="#tracks" onClick={closeMobileMenu}>
-										<span>Tracks</span>
+									<a href="#about" onClick={closeMobileMenu}>
+										<span>About</span>
 									</a>
 									<a href="#sponsors" onClick={closeMobileMenu}>
 										<span>Sponsors</span>
+									</a>
+									<a href="#tracks" onClick={closeMobileMenu}>
+										<span>Tracks</span>
 									</a>
 									<a href="#schedule" onClick={closeMobileMenu}>
 										<span>Schedule</span>
@@ -128,7 +140,7 @@ function NavBar() {
 						</div>
 					</nav>
 				</div>
-				<div className="spacer">&nbsp;</div>
+				<div className="spacer"></div>
 			</>
 		);
 }

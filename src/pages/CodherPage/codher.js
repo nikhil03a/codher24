@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import "./codher.css";
 import { tracks } from "../../tracks.js";
+import Events from '../EventsPage/events';
 
 function Codher() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -20,15 +21,15 @@ function Codher() {
 	}, []);
 	
 	window.addEventListener("resize", changeView);
-  useEffect(() => {
-    const script = document.createElement("script");
+//   useEffect(() => {
+//     const script = document.createElement("script");
 
-    script.src = "https://cdn.logwork.com/widget/countdown.js";
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
+//     script.src = "https://cdn.logwork.com/widget/countdown.js";
+//     document.body.appendChild(script);
+//     return () => {
+//       document.body.removeChild(script);
+//     }
+//   }, []);
 
   	const PrizeCard = ({ title, cash, desc, img }) => {
 		return (
@@ -92,7 +93,7 @@ function Codher() {
 	}
   return (
 		<div className="container">
-			<div className="timer">
+			{/* <div className="timer">
 				{view ? (
 					<a
 						href="https://logwork.com/countdown-yf59"
@@ -124,7 +125,7 @@ function Codher() {
 						CODHER Starts In
 					</a>
 				)}
-			</div>
+			</div> */}
 
 			<div className="prizes-title">
 				<span>PRIZES</span>
@@ -197,11 +198,14 @@ function Codher() {
 				/>
 			</div>
 			<div className="tracks" id="tracks">
+				{/* <h2 className="text-shadow">COMING SOON...</h2>
+				<div className="tags"></div> */}
+				<div>
+				<Events />
+				</div>
 				<div className="tracks-title">
 					<span>TRACKS</span>
 				</div>
-				{/* <h2 className="text-shadow">COMING SOON...</h2>
-				<div className="tags"></div> */}
 				<div>
 				{tracks.map((element, key) => {
 					return (
@@ -212,7 +216,6 @@ function Codher() {
 								title={element.title}
 								content={element.content}
 							/>
-							{/* {console.log(element)} */}
 						</>
 					);
 				})}

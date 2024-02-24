@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import NavBar from '../Navbar/navbar';
 import "./home.css";
+import Timer from './timer';
 
 function Home() {
 	const [width, setWidth] = useState(window.innerWidth);
@@ -42,7 +42,7 @@ function Home() {
 					</div>
 					<div>
 						<span>
-							<button className="btn" onClick={() => {window.location.href = "https://unstop.com/o/pKOWv5j?lb=fn6cF7C"}}>
+							<button className="btn" onClick={() => {window.open ("https://unstop.com/o/pKOWv5j?lb=fn6cF7C", "_blank")}}>
 								<span>Register</span>
 							</button>
 						</span>
@@ -68,6 +68,7 @@ function Home() {
 					<img src="assets/downarrow.png" alt="arrImg"></img>
 				</a>
 			</div>
+			<Timer />
 		</>
 	);
 }
