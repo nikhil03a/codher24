@@ -8,19 +8,15 @@ function Footer() {
 				<div className="container">
 					<div className="row">
 						<div className="footer-col">
-							<h4>ACM CEG</h4>
-							<h5 className="abt">
-								We aim to motivate students to embark on a journey of learning
-								and developing the tools of computer science and instilling in
-								them a passion for computer science.We serve to clear the
-								clutter and provide guidance to help them to achieve their goals
-							</h5>
+						<h4>Contact</h4>
+							<ul>
+								<li className="contactList">Bharath Kumar DP : 9952049834</li>
+								<li className="contactList">Asmitha Eswaran : 7338850301</li>
+								</ul>
 						</div>
 						<div className="footer-col">
 							<h4>Contact</h4>
 							<ul>
-								<li className="contactList">Bharath Kumar DP : 9952049834</li>
-								<li className="contactList">Asmitha Eswaran : 7338850301</li>
 								<li className="contactList">Pranava Raman BMS : 9443501317</li>
 								<li className="contactList">Akshayalakshmi VK : 9360722652</li>
 								<li className="contactList">
