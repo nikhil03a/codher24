@@ -5,6 +5,7 @@ import Footer from "./pages/Footer/footer";
 import Sponsors from "./pages/SponsorsPage/sponsors";
 import Faq from "./pages/Faq/Faq";
 import Events from "./pages/EventsPage/events";
+import Tracks from "./pages/Tracks/Tracks";
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       <About />
       <Sponsors />
       <Events />
+      <Tracks />
       <Faq />
       <Footer />
-    </>
+	</>
+
   );
 }
 
