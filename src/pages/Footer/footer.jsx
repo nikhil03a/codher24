@@ -53,7 +53,7 @@ function Footer() {
 					<hr className="dashed"></hr>
 					<div className="copyright">
 						<div>
-							&copy;&nbsp;2023&nbsp;<strong>ACM CEG</strong>.
+							&copy;&nbsp;2024&nbsp;<strong>ACM CEG</strong>.
 						</div>
 						<div>&nbsp;Made with 🖤️ by TechOps, ACM CEG</div>
 					</div>

@@ -1,10 +1,16 @@
 .herocontainer{
 
     position: relative;
-    overflow:hidden;
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
+    /* overflow:hidden; */
+    /* clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px)); */
 }
 
+.hero_heading{
+  color: #b216b8;
+  font-size: 4rem;
+  text-align: center;
+  font-family: sans-serif;
+}
 .overlay {
     position:absolute;
     inset:0;
@@ -22,7 +28,7 @@
 .content{
     position:absolute;
     transform:translate(-50%,-50%);
-    top:50%;
+    top:40%;
     left:50%;
     width:60%;
     margin-inline:auto;
@@ -165,16 +171,4 @@ svg {
 }
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
-}
-
-@media screen and (max-width: 768px) {
-  .content{
-    margin-top: 10rem;
-  }
-    .codher_svg{
-      outline:2px solid red;      
-      font-size: 10rem;
-      transform: scale(0.75)
-    }
-  
 }

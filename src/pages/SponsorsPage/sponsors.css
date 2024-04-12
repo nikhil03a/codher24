@@ -27,7 +27,7 @@
 }
 
 .sponsor_img{
-  width:400px;
+  width:450px;
   height: 200px;
   border-radius: 15px;
 }
@@ -82,7 +82,7 @@
 
 @media(max-width:912px){
   .sponsor_img{
-    width:400px;
+    width:350px;
     height: 200px;
   }
 }

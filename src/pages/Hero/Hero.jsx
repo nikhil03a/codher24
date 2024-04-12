@@ -1,9 +1,27 @@
+import { useState, useEffect } from "react";
+
 import NavBar from "../Navbar/Navbar";
 import styles from "./Hero.module.css";
 
+
 const Hero = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     return (
       <>
+              <NavBar />
+
         <div
           className={styles.herocontainer}
           style={{
@@ -14,10 +32,9 @@ const Hero = () => {
             backgroundPosition: "center",
           }}
         >
-        <NavBar />
           <div className={styles.overlay}>
             <div className={styles.content}>
-              <svg viewBox= "0 0 960 300">
+              { width >= 912 ? <svg viewBox= "0 0 960 300">
                 <symbol id="s-text">
                   <text text-anchor="middle" x="50%" y="80%">
                     {" "}
@@ -32,7 +49,10 @@ const Hero = () => {
                   <use xlinkHref="#s-text" className={styles.text_copy}></use>
                   <use xlinkHref="#s-text" className={styles.text_copy}></use>
                 </g>
-              </svg>
+              </svg> :
+              <h1 className={styles.hero_heading}>
+                CODHER
+              </h1>}
               <p>
                 An all day hackathon to channel all that inner coddess energy to
                 give shape to your amazing ideas. Team up with fellow queen bees
