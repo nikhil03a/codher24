@@ -12,11 +12,20 @@
     z-index: 1;
 }
 
+.codher_svg{
+  width:960px;
+  display: block;
+  margin-inline:auto;
+  height: fit-content;
+  /* margin-top:10rem; */
+}
 .content{
     position:absolute;
     transform:translate(-50%,-50%);
-    top:40%;
+    top:50%;
     left:50%;
+    width:60%;
+    margin-inline:auto;
     color:white;
     font-size: 1.3rem;
 }
@@ -26,7 +35,7 @@
 svg {
     display: block;
     font: 10rem 'Montserrat';
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .text_copy {
@@ -99,7 +108,9 @@ svg {
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
 }
-
+.glitch_btn:hover  {
+  cursor: pointer;
+}
 .glitch_btn:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
@@ -152,12 +163,18 @@ svg {
     transform: translate(0);
   }
 }
-
-@media (min-width: 768px) {
-  .glitch_btn,
-  .glitch_btn:after {
-  }
-}
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+    margin-top: 10rem;
+  }
+    .codher_svg{
+      outline:2px solid red;      
+      font-size: 10rem;
+      transform: scale(0.75)
+    }
+  
 }

@@ -17,7 +17,7 @@ const Hero = () => {
         <NavBar />
           <div className={styles.overlay}>
             <div className={styles.content}>
-              <svg viewBox="0 0 960 300">
+              <svg viewBox= "0 0 960 300">
                 <symbol id="s-text">
                   <text text-anchor="middle" x="50%" y="80%">
                     {" "}
@@ -41,7 +41,7 @@ const Hero = () => {
                 comfort of your homes/hostel rooms as it's going to be online
                 this time. Join us to hack and slay, one line of code at a time.
               </p>
-              <button className={styles.glitch_btn} role="button" disabled={true}>Register Now!</button>
+              <a href="https://hack2skill.com/hack/acmceg-codher"><button className={styles.glitch_btn} role="button">Register Now!</button></a>
 
             </div>
           </div>

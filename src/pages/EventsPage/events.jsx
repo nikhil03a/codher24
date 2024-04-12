@@ -7,9 +7,9 @@ function Events() {
           <div className={styles.responsive_grid}>
             <div className={styles.event_card}>
               <div>
-                <img src="/assets/logi.svg" alt="LogicLink" />
+                <img src="/assets/logicLinkPoster.jpeg" alt="LogicLink" />
               </div>
-              <div>
+              <div className = {styles.event_content}>
                 <h3>LogicLink- Digital Expedition</h3>
                 <p>
                   LogicLink-Digital Expedition invites participants to embark on
@@ -22,9 +22,9 @@ function Events() {
 
             <div className={styles.event_card}>
               <div>
-                <img src="/assets/pixel.svg" alt="Pixel Perfect" />
+                <img src="/assets/PixelPoster.jpeg" alt="Pixel Perfect" />
               </div>
-              <div>
+              <div className = {styles.event_content}>
                 <h3>Pixel Perfect!</h3>
 
                 <p>

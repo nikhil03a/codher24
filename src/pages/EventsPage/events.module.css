@@ -9,21 +9,35 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
 }
 
 .event_card{
-    padding:1rem;
-    margin-inline:1rem;
+    padding:1.5rem;
+    flex:1 1 100%;
 background: rgba(0, 0, 0, 0.33);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.1px);
 -webkit-backdrop-filter: blur(6.1px);
 border: 1px solid rgba(0, 0, 0, 0.3);
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .event_card img{
-    height:200px;
-    display: block;
+    height:300px;
+    width:400px;
     margin-inline:auto;
+    object-fit: contain;
+}
+
+.event_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:1rem;
+    font-size:1.5rem;
 }

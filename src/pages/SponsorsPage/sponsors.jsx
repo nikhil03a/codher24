@@ -7,7 +7,7 @@ function Sponsors() {
 		<div className="sponsors_container" id="sponsors">
 			<h2 class="glitch layers" data-text="Sponsors"><span>Sponsors</span></h2>
 			<div className="sponsor_card">
-				<img src="/assets/motorq.png" alt="Motorq" style={{width:'450px', borderRadius:'10px'}}/>
+				<img src="/assets/motorq.png" alt="Motorq" className='sponsor_img'/>
 				<h3>Title Sponsor - Motorq</h3>
 			</div>
 			<div className="sponsor_card">
