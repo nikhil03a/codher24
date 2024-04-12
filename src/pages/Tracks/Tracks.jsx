@@ -3,7 +3,7 @@ import './Tracks.css';
 const Tracks = () => {
     return (
         <>
-      <div>
+      <div id="tracks">
         <h2 className="glitch layers" data-text="Sponsors">
           <span>Tracks</span>
         </h2>

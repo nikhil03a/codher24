@@ -18,6 +18,7 @@
 body{
   background-color: var(--background);
   overflow-x: hidden;
+  font-family: 'Recursive', sans-serif;
 }
 
 h2{

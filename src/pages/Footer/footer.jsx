@@ -35,7 +35,7 @@ function Footer() {
 								<a href="https://twitter.com/AcmCeg" target="blank">
 									<i className="fab fa-twitter"></i>
 								</a>
-								<a href="https://www.instagram.com/acm_ceg" target="blank">
+								<a href="https://www.instagram.com/acmceg/" target="blank">
 									<i className="fab fa-instagram"></i>
 								</a>
 								<a
@@ -47,7 +47,6 @@ function Footer() {
 							</div>
 						</div>
 					</div>
-					<a href="#home" className="to-top"></a>
 				</div>
 				<div>
 					<hr className="dashed"></hr>

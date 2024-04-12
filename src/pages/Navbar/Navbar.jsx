@@ -9,7 +9,7 @@ const Navbar = () => {
   <nav>
     <ul>
       <li><a href="#pre_events">Pre-Events</a></li>
-      <li><a href="#events">Events</a></li>
+      <li><a href="#tracks">Tracks</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
